@@ -34,7 +34,7 @@ public class UserController {
         if (phone != null) {
             String code = ValidateCodeUtils.generateValidateCode(4).toString();
 
-            log.info("你的验证码是：{}", code);
+            log.info("你的手机号是：{}，你的验证码是：{}",phone, code);
 
             session.setAttribute(phone, code);
 
